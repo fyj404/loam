@@ -82,7 +82,6 @@ namespace Common_tools
 
     inline bool if_file_exit( const std::string &name )
     {
-        //Copy from: https://stackoverflow.com/questions/12774207/fastest-way-to-check-if-a-file-exist-using-standard-c-c11-c
         struct stat buffer;
         return ( stat( name.c_str(), &buffer ) == 0 );
     };

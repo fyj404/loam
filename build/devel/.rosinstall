@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/f404/loam_no_ros/loam_livox/build/devel/setup.sh

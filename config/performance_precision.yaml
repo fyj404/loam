@@ -3,7 +3,7 @@ common:
     maximum_parallel_thread: 1      # number of thread use for interative pose optimization
     odom_mode: 1
     if_motion_deblur: 0             # motion deblur, 0: piesewise processing; 1: linear interpolation
-    if_save_to_pcd_files: 0
+    if_save_to_pcd_files: 1
     if_update_mean_and_cov_incrementally: 1
     threshold_cell_revisit: 2000    # if update frame index bigger than this threshold, treat target cell as revisited
 
@@ -41,7 +41,7 @@ mapping:
     max_allow_final_cost: 2.0
 
 loop_closure:
-    if_enable_loop_closure: 0
+    if_enable_loop_closure: 1
     if_dump_keyframe_data: 0
     scans_of_each_keyframe: 300
     scans_between_two_keyframe: 100
